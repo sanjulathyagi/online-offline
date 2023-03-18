@@ -22,7 +22,7 @@
                     <tbody class="text-gray-600 font-light">
 
                         @foreach ($users as $user )
-                        {{-- <tr class ="border-b border-gray-200 hove:bg-gray-100">
+                        <tr class ="border-b border-gray-200 hove:bg-gray-100">
                             <td class=" py-3 px-6">{{ $user->name }}</td>
                             <td class=" py-3 px-6">{{ $user->email }}</td>
                             <td class=" py-3 px-6">{{ carbon\carbon::parse($user->last_seen)->diffForHumans()}}</td>
@@ -31,7 +31,7 @@
 
                                 {{ $user->last_seen>= now()->subMinutes(2)? 'online' : 'offline' }}</td>
                             </span>
-                        </tr> --}}
+                        </tr>
 
                         @endforeach
 
